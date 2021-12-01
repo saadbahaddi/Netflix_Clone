@@ -10,6 +10,7 @@ let apiKey = "ce0b3598561ace787095745656127541"
 var base_url = "https://api.themoviedb.org/3/"
 var getToken_url = "authentication/token/new?api_key="
 var validate_withLogin = "authentication/token/validate_with_login?api_key="
+var githubtest = "jhbhbhbkjbkb"
 class LoginVieModel {
    
     
