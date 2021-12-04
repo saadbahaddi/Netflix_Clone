@@ -19,7 +19,9 @@ class ViewController: BaseViewController {
         passwordTextField.delegate = self
     }
     @IBAction func onSignInClicked(_ sender: Any) {
-        loginViewModel.signIngWith(email: "hhhhh", password: "hhhhhh")
+       // loginViewModel.signIngWith(email: emailTextField.text!, password: passwordTextField.text!)
+        loginViewModel.getSessionId(for: emailTextField.text!, with: passwordTextField.text!)
+        
     }
 }
 

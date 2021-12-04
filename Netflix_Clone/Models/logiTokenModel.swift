@@ -10,10 +10,15 @@ struct Token:Decodable {
     var success:Bool
     var expires_at:String
     var request_token:String
+  
 }
 struct UserLogin:Encodable {
     var username:String
     var password:String
     var request_token:String
     
+}
+struct Session : Decodable {
+    var success:Bool
+    var session_id:String
 }
