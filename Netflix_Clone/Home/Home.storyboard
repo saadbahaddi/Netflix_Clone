@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="nlu-At-4q2">
+            <objects>
+                <viewController storyboardIdentifier="home" id="QaP-3U-U9I" customClass="HomeViewController" customModule="Netflix_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M9O-kB-ASS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDv-kA-4LQ">
+                                <rect key="frame" x="111" y="789" width="192" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="logOut:" destination="QaP-3U-U9I" eventType="touchUpInside" id="HUY-S6-eQN"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="venom" translatesAutoresizingMaskIntoConstraints="NO" id="4v6-Rf-jgI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="319"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Nlogo-3" translatesAutoresizingMaskIntoConstraints="NO" id="kez-ee-ade">
+                                <rect key="frame" x="20" y="44" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="4eA-qo-wPf"/>
+                                    <constraint firstAttribute="width" secondItem="kez-ee-ade" secondAttribute="height" id="VEc-Pq-9b0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VENOM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kct-ET-BSD">
+                                <rect key="frame" x="147.5" y="299" width="119.5" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="73" translatesAutoresizingMaskIntoConstraints="NO" id="ybY-e9-Do4">
+                                <rect key="frame" x="80" y="54" width="324" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TV Shows" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fo8-vs-MjM">
+                                        <rect key="frame" x="0.0" y="0.0" width="73" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvL-dU-x76">
+                                        <rect key="frame" x="146" y="0.0" width="54.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="MyList" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ee-mo-gKZ">
+                                        <rect key="frame" x="273.5" y="0.0" width="50.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zTl-om-DF8"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kez-ee-ade" firstAttribute="leading" secondItem="zTl-om-DF8" secondAttribute="leading" constant="20" id="893-H6-m4X"/>
+                            <constraint firstItem="kct-ET-BSD" firstAttribute="centerX" secondItem="M9O-kB-ASS" secondAttribute="centerX" id="CXd-Mb-7JR"/>
+                            <constraint firstItem="zTl-om-DF8" firstAttribute="trailing" secondItem="ybY-e9-Do4" secondAttribute="trailing" constant="10" id="Nri-36-CPj"/>
+                            <constraint firstItem="kez-ee-ade" firstAttribute="top" secondItem="zTl-om-DF8" secondAttribute="top" id="RgT-vk-CCJ"/>
+                            <constraint firstItem="4v6-Rf-jgI" firstAttribute="top" secondItem="M9O-kB-ASS" secondAttribute="top" id="SKn-fg-qC9"/>
+                            <constraint firstItem="4v6-Rf-jgI" firstAttribute="leading" secondItem="zTl-om-DF8" secondAttribute="leading" id="WQ7-2c-BRQ"/>
+                            <constraint firstItem="ybY-e9-Do4" firstAttribute="top" secondItem="zTl-om-DF8" secondAttribute="top" constant="10" id="XiA-zV-7ga"/>
+                            <constraint firstItem="ybY-e9-Do4" firstAttribute="leading" secondItem="kez-ee-ade" secondAttribute="trailing" constant="20" id="ddC-aB-XD7"/>
+                            <constraint firstItem="kct-ET-BSD" firstAttribute="top" secondItem="4v6-Rf-jgI" secondAttribute="bottom" constant="-20" id="lkK-RE-PmP"/>
+                            <constraint firstItem="4v6-Rf-jgI" firstAttribute="height" secondItem="M9O-kB-ASS" secondAttribute="height" multiplier="0.356027" id="pxT-te-Bz2"/>
+                            <constraint firstItem="4v6-Rf-jgI" firstAttribute="trailing" secondItem="zTl-om-DF8" secondAttribute="trailing" id="wlk-8T-tIW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N0m-JU-xhK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.92753623188406" y="96.428571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Nlogo-3" width="625" height="1077"/>
+        <image name="venom" width="297" height="224"/>
+    </resources>
+</document>

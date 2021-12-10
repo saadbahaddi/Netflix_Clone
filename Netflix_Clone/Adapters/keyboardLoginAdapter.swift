@@ -24,8 +24,8 @@ extension ViewController : UITextFieldDelegate {
     // resign keyboard on view touch
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if touches.first?.view == view {
-            emailTextField.resignFirstResponder()
-            passwordTextField.resignFirstResponder()
+            emailTextField!.resignFirstResponder()
+            passwordTextField!.resignFirstResponder()
         }
     }
     // resign keyboard on return pressed

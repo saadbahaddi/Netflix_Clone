@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="QvC-bv-2T1">
+            <objects>
+                <viewController storyboardIdentifier="login" id="C9D-RW-Xmj" customClass="ViewController" customModule="Netflix_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Kh-2Q-qeb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="netflixlogo" translatesAutoresizingMaskIntoConstraints="NO" id="qFK-4o-47U">
+                                <rect key="frame" x="10" y="49" width="155" height="62"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IXE-dZ-lod">
+                                <rect key="frame" x="15" y="161" width="384" height="269"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xma-Mh-s8f">
+                                        <rect key="frame" x="5" y="0.0" width="374" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Email or phone number" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VHT-Dd-udU">
+                                        <rect key="frame" x="0.0" y="46" width="384" height="72.5"/>
+                                        <color key="backgroundColor" red="0.1921314895" green="0.19217148419999999" blue="0.19212898610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qhd-1o-bZv">
+                                        <rect key="frame" x="0.0" y="128.5" width="384" height="72.5"/>
+                                        <color key="backgroundColor" red="0.1921314895" green="0.19217148419999999" blue="0.19212898610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0u-3n-bP2">
+                                        <rect key="frame" x="0.0" y="211" width="384" height="58"/>
+                                        <color key="backgroundColor" red="0.90041726830000002" green="0.03051600233" blue="0.075349308549999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onSignInClicked:" destination="C9D-RW-Xmj" eventType="touchUpInside" id="0wY-CG-wvs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qhd-1o-bZv" secondAttribute="trailing" id="0pg-Zf-apo"/>
+                                    <constraint firstItem="qhd-1o-bZv" firstAttribute="leading" secondItem="IXE-dZ-lod" secondAttribute="leading" id="3YD-33-OfT"/>
+                                    <constraint firstAttribute="trailing" secondItem="z0u-3n-bP2" secondAttribute="trailing" id="ITL-Ow-mZE"/>
+                                    <constraint firstAttribute="trailing" secondItem="VHT-Dd-udU" secondAttribute="trailing" id="R7a-Qm-oZo"/>
+                                    <constraint firstItem="VHT-Dd-udU" firstAttribute="leading" secondItem="IXE-dZ-lod" secondAttribute="leading" id="V8K-W0-9Ac"/>
+                                    <constraint firstItem="z0u-3n-bP2" firstAttribute="height" secondItem="VHT-Dd-udU" secondAttribute="height" multiplier="0.8" id="q6z-R9-yCP"/>
+                                    <constraint firstItem="z0u-3n-bP2" firstAttribute="leading" secondItem="IXE-dZ-lod" secondAttribute="leading" id="qii-gy-j2q"/>
+                                    <constraint firstItem="Xma-Mh-s8f" firstAttribute="leading" secondItem="IXE-dZ-lod" secondAttribute="leading" constant="5" id="r38-WQ-DF8"/>
+                                    <constraint firstItem="qhd-1o-bZv" firstAttribute="height" secondItem="VHT-Dd-udU" secondAttribute="height" id="rns-JH-19U"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uML-Zr-cRh"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IXE-dZ-lod" firstAttribute="top" secondItem="qFK-4o-47U" secondAttribute="bottom" constant="50" id="C1c-lP-WNP"/>
+                            <constraint firstItem="qFK-4o-47U" firstAttribute="width" secondItem="3Kh-2Q-qeb" secondAttribute="width" multiplier="0.374396" id="YFY-MH-rk0"/>
+                            <constraint firstItem="IXE-dZ-lod" firstAttribute="leading" secondItem="uML-Zr-cRh" secondAttribute="leading" constant="15" id="h29-Hm-7Oi"/>
+                            <constraint firstItem="IXE-dZ-lod" firstAttribute="height" secondItem="3Kh-2Q-qeb" secondAttribute="height" multiplier="0.3" id="hib-AL-ALy"/>
+                            <constraint firstItem="qFK-4o-47U" firstAttribute="top" secondItem="uML-Zr-cRh" secondAttribute="top" constant="5" id="jtr-nF-ITd"/>
+                            <constraint firstItem="qFK-4o-47U" firstAttribute="height" secondItem="3Kh-2Q-qeb" secondAttribute="height" multiplier="0.0691964" id="ns4-fb-7ZR"/>
+                            <constraint firstItem="uML-Zr-cRh" firstAttribute="trailing" secondItem="IXE-dZ-lod" secondAttribute="trailing" constant="15" id="pDh-ZF-kvI"/>
+                            <constraint firstItem="qFK-4o-47U" firstAttribute="leading" secondItem="uML-Zr-cRh" secondAttribute="leading" constant="10" id="sAh-fu-nUg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="VHT-Dd-udU" id="tHu-zT-37R"/>
+                        <outlet property="passwordTextField" destination="qhd-1o-bZv" id="j8d-6M-5vl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjS-L8-xTf" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="62.946428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="netflixlogo" width="1440" height="817"/>
+    </resources>
+</document>

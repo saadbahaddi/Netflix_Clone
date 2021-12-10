@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 let apiKey = "ce0b3598561ace787095745656127541"
 var base_url = "https://api.themoviedb.org/3/"
 var getToken_url = "authentication/token/new?api_key="
@@ -84,7 +85,12 @@ class LoginVieModel {
                 if let d = data {
                     do{
                         let result = try JSONDecoder().decode(Session.self, from: d)
+                        
                         print("hahwa session id : " + result.session_id)
+                        if result.success == true {
+                            defaults.set(1, forKey: "isloggedin")
+                        }
+                      //  try self.savePasswordToKeychain(password: d , service: "password", account: "account")
                     }catch{
                         print(error)
                     }
@@ -94,4 +100,24 @@ class LoginVieModel {
             
         }
     }
+   static func logOut(controller:UIViewController) {
+    guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+       let sceneDelegate = windowScene.delegate as? SceneDelegate
+    else {
+        return
+      }
+        
+    let LoginVC = UIStoryboard(name:"LoginStoryBoard", bundle: nil).instantiateViewController(withIdentifier: "login") as! ViewController
+    UIView.animate(withDuration: 2) {
+        sceneDelegate.window?.rootViewController = LoginVC
+    }
+     
+
+        
+    }
+
+
 }
+
+ 
+

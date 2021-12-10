@@ -10,7 +10,7 @@
 		01CF5BE02755302E00853865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CF5BDF2755302E00853865 /* AppDelegate.swift */; };
 		01CF5BE22755302E00853865 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CF5BE12755302E00853865 /* SceneDelegate.swift */; };
 		01CF5BE42755302E00853865 /* LogiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CF5BE32755302E00853865 /* LogiViewController.swift */; };
-		01CF5BE72755302E00853865 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01CF5BE52755302E00853865 /* Main.storyboard */; };
+		01CF5BE72755302E00853865 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01CF5BE52755302E00853865 /* Login.storyboard */; };
 		01CF5BEA2755302E00853865 /* Netflix_Clone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 01CF5BE82755302E00853865 /* Netflix_Clone.xcdatamodeld */; };
 		01CF5BEC2755303600853865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01CF5BEB2755303600853865 /* Assets.xcassets */; };
 		01CF5BEF2755303600853865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01CF5BED2755303600853865 /* LaunchScreen.storyboard */; };
@@ -23,6 +23,12 @@
 		01E498DD2756E35900D92537 /* stringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E498DC2756E35900D92537 /* stringExtension.swift */; };
 		01E498E527578B2A00D92537 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E498E427578B2A00D92537 /* LoginViewModel.swift */; };
 		01E498EB2757923B00D92537 /* logiTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E498EA2757923B00D92537 /* logiTokenModel.swift */; };
+		01E498F4275CE32000D92537 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E498F3275CE32000D92537 /* KeychainManager.swift */; };
+		01E498F9275CE3AA00D92537 /* KeychainErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E498F8275CE3AA00D92537 /* KeychainErrors.swift */; };
+		01E49904275CEA6F00D92537 /* LoginStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E49903275CEA6F00D92537 /* LoginStoryBoard.storyboard */; };
+		01E499092760EAD100D92537 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E499082760EAD100D92537 /* Constants.swift */; };
+		01E4990F2760EB8700D92537 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E4990E2760EB8700D92537 /* HomeViewController.swift */; };
+		01E499172760EB9600D92537 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E499162760EB9600D92537 /* Home.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +53,7 @@
 		01CF5BDF2755302E00853865 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01CF5BE12755302E00853865 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		01CF5BE32755302E00853865 /* LogiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogiViewController.swift; sourceTree = "<group>"; };
-		01CF5BE62755302E00853865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01CF5BE62755302E00853865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		01CF5BE92755302E00853865 /* Netflix_Clone.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Netflix_Clone.xcdatamodel; sourceTree = "<group>"; };
 		01CF5BEB2755303600853865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01CF5BEE2755303600853865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -65,6 +71,12 @@
 		01E498DC2756E35900D92537 /* stringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stringExtension.swift; sourceTree = "<group>"; };
 		01E498E427578B2A00D92537 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		01E498EA2757923B00D92537 /* logiTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logiTokenModel.swift; sourceTree = "<group>"; };
+		01E498F3275CE32000D92537 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		01E498F8275CE3AA00D92537 /* KeychainErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainErrors.swift; sourceTree = "<group>"; };
+		01E49903275CEA6F00D92537 /* LoginStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginStoryBoard.storyboard; sourceTree = "<group>"; };
+		01E499082760EAD100D92537 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		01E4990E2760EB8700D92537 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		01E499162760EB9600D92537 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +127,8 @@
 		01CF5BDE2755302E00853865 /* Netflix_Clone */ = {
 			isa = PBXGroup;
 			children = (
+				01E4990D2760EB6B00D92537 /* Home */,
+				01E498F2275CE30800D92537 /* KeychainManager */,
 				01E498E92757922B00D92537 /* Models */,
 				01CF5BF02755303600853865 /* Info.plist */,
 				01E498AB27565DC000D92537 /* Adapters */,
@@ -151,9 +165,10 @@
 		01CF5C162755308900853865 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				01CF5BE52755302E00853865 /* Main.storyboard */,
+				01CF5BE52755302E00853865 /* Login.storyboard */,
 				01CF5BE32755302E00853865 /* LogiViewController.swift */,
 				01E498E427578B2A00D92537 /* LoginViewModel.swift */,
+				01E49903275CEA6F00D92537 /* LoginStoryBoard.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -187,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				01E498C42756977400D92537 /* BaseViewController.swift */,
+				01E499082760EAD100D92537 /* Constants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -222,6 +238,24 @@
 				01E498EA2757923B00D92537 /* logiTokenModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		01E498F2275CE30800D92537 /* KeychainManager */ = {
+			isa = PBXGroup;
+			children = (
+				01E498F3275CE32000D92537 /* KeychainManager.swift */,
+				01E498F8275CE3AA00D92537 /* KeychainErrors.swift */,
+			);
+			path = KeychainManager;
+			sourceTree = "<group>";
+		};
+		01E4990D2760EB6B00D92537 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				01E4990E2760EB8700D92537 /* HomeViewController.swift */,
+				01E499162760EB9600D92537 /* Home.storyboard */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,8 +362,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				01CF5BEF2755303600853865 /* LaunchScreen.storyboard in Resources */,
+				01E499172760EB9600D92537 /* Home.storyboard in Resources */,
 				01CF5BEC2755303600853865 /* Assets.xcassets in Resources */,
-				01CF5BE72755302E00853865 /* Main.storyboard in Resources */,
+				01CF5BE72755302E00853865 /* Login.storyboard in Resources */,
+				01E49904275CEA6F00D92537 /* LoginStoryBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,13 +392,17 @@
 			files = (
 				01E498BC27567E1400D92537 /* textFieldExtention.swift in Sources */,
 				01CF5BEA2755302E00853865 /* Netflix_Clone.xcdatamodeld in Sources */,
+				01E498F9275CE3AA00D92537 /* KeychainErrors.swift in Sources */,
 				01CF5BE42755302E00853865 /* LogiViewController.swift in Sources */,
 				01CF5BE02755302E00853865 /* AppDelegate.swift in Sources */,
+				01E4990F2760EB8700D92537 /* HomeViewController.swift in Sources */,
 				01E498B3275668AC00D92537 /* Box.swift in Sources */,
 				01E498C52756977400D92537 /* BaseViewController.swift in Sources */,
 				01CF5BE22755302E00853865 /* SceneDelegate.swift in Sources */,
+				01E498F4275CE32000D92537 /* KeychainManager.swift in Sources */,
 				01E498DD2756E35900D92537 /* stringExtension.swift in Sources */,
 				01E498E527578B2A00D92537 /* LoginViewModel.swift in Sources */,
+				01E499092760EAD100D92537 /* Constants.swift in Sources */,
 				01E498AD27565DE900D92537 /* keyboardLoginAdapter.swift in Sources */,
 				01E498EB2757923B00D92537 /* logiTokenModel.swift in Sources */,
 			);
@@ -400,12 +440,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		01CF5BE52755302E00853865 /* Main.storyboard */ = {
+		01CF5BE52755302E00853865 /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				01CF5BE62755302E00853865 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		01CF5BED2755303600853865 /* LaunchScreen.storyboard */ = {
